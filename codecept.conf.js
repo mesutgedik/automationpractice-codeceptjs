@@ -9,7 +9,8 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    Login: './pages/Login.js'
   },
   bootstrap: null,
   mocha: {},
