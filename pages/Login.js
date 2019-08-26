@@ -2,19 +2,17 @@ const { I } = inject();
 
 module.exports = {
 
-  Login_pass:{
+  loginPaths:{
       email: '//input[@id="email"]',
-      password: '//input[@id="passwd"]'
+      cpass: '//input[@id="passwd"]'
 
   },
   buttons:{
-  login_click:'//span[contains(.,"Sign in")]',
-  signinButton:'//a[contains(@class,"login")]'
+  signin:'//span[contains(.,"Sign in")]'
 },
-    loginPage(email, password) {
-      I.click(this.buttons.signinButton);
-      I.fillField(this.Login_pass.email, email);
-      I.fillField(this.Login_pass.password, password);
-      I.click(this.buttons.login_click);
+    loginPage(email, cpass) {
+      I.fillField(this.loginPaths.email, email);
+      I.fillField(this.loginPaths.cpass, cpass);
+      I.click(this.buttons.signin);
   },
 }

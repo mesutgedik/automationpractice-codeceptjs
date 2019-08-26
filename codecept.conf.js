@@ -10,9 +10,10 @@ exports.config = {
   },
   include: {
     I: './steps_file.js',
-    Login: './pages/Login.js'
+    Login: './pages/Login.js',
+    Main: './pages/Main.js'
   },
   bootstrap: null,
   mocha: {},
-  name: 'denemeCodecept'
+  name: 'AutomationPractice'
 }
